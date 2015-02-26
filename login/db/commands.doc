@@ -1,0 +1,20 @@
+# Start/stop server: sudo service postgresql start
+# postgresql
+# grant all privileges on testdb to dyosa;
+# \password dyosa
+# \du
+
+# /etc/init.d/apache2 stop
+# /etc/init.d/apache2 start
+
+#psql -d some_database -U webgui
+# psql testdb -U dyosa
+
+https://www.youtube.com/channel/UCFW_fvwCoF44MGWk74U_rFg
+django-admin.py dbshell
+python manage.py migrate
+python manage.py runserver 8080
+
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
+python manage.py startapp polls
+python manage.py sql polls

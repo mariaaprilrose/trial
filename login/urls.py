@@ -29,7 +29,7 @@ urlpatterns = patterns('',
 	url(r'^accounts/logout/$', views.logout),
 	
 	url(r'^accounts/loggedin/$', views.loggedin),
-	url(r'accounts/invalid/$', views.invalid_login),
+	url(r'^accounts/invalid/$', views.invalid_login),
 	url(r'^accounts/register/$', views.register_user),
 	url(r'^accounts/register_success/$', views.register_success),
     url(r'^contact/$', ContactWizard.as_view([ContactForm1, ContactForm2, ContactForm3])),

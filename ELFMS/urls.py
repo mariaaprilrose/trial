@@ -6,7 +6,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'', include('login.urls')),
+    url(r'^accounts/', include('requestmanager.urls')),
     url(r'^admin/', include(admin.site.urls)),
     #for get functions
-    #(r'^articles/', include('articles.urls')),
+    (r'^accounts/', include('userprofile.urls')),
+    
 )

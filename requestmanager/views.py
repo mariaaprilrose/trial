@@ -14,6 +14,9 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 
+# def view_request(request):
+  
+
 def create_request(request):
     #return render(request,'requestmanager/request.html')
 
@@ -21,7 +24,7 @@ def create_request(request):
         form = MyRequestForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('accounts/loggedin')
+            return HttpResponseRedirect('/accounts/request_success/')
         
     else:
         form = MyRequestForm()

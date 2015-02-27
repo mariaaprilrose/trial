@@ -9,12 +9,12 @@
 
   {% endfor %}
   
-  <form action="accounts/create_request" method="post">{% csrf_token %}
+  <form action="/accounts/create_request/" method="post">{% csrf_token %}
   {{form.as_ul}}
   
   
   
-  <input type="submit" value="create_request" />
+  <input type="submit" value="Make Request" />
     
   </form>
   

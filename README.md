@@ -12,8 +12,7 @@ Engineering Library Fund Management System
 
 
 
-#Authors:
-
+Authors:
 * Andaca, Maria April Rose
 * Shen, Mara
 * Ventura, Rowel
